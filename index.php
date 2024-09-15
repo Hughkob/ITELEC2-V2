@@ -1,6 +1,7 @@
 <?php
-include_once 'config/settings-configuration.php'
+include_once 'config/settings-configuration.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,19 +12,20 @@ include_once 'config/settings-configuration.php'
 <body>
     <h1>SIGN IN</h1>
     <form action="dashboard/admin/authentication/admin-class.php" method="POST">
-<input type="hidden" name="csrf token" value="<? echo $csrf_token ?>">
-<input type="email" name="email" placeholder="enter email" required> <br>
-<input type="password" name="password" placeholder="enter password" required> <br>
-<button type="submit" name="btn-signin">SIGN IN</button>
-
+        <input type="hidden" name="csrf_token" value="<?php echo $csrf_token?>">
+        <input type="email" name="email" placeholder="Enter email" required> <br>
+        <input type="password" name="password" placeholder="Enter password" required> <br>
+        <button type="submit" name="btn-signin">SIGN IN</button>
     </form>
-    <h1>REGISTRATION</h1>
+   
+   
+    <h1>REGISTRAION</h1>
     <form action="dashboard/admin/authentication/admin-class.php" method="POST">
-    <input type="hidden" name="csrf token" value="<? echo $csrf_token ?>">
-    <input type="text" name="username" placeholder="enter username" required> <br>
-    <input type="email" name="email" placeholder="enter email" required> <br>
-    <input type="password" name="password" placeholder="enter password" required> <br>
-    <button type="submit" name="btn-sign up">SIGN UP</button>
+        <input type="hidden" name="csrf_token" value="<?php echo $csrf_token?>">
+        <input type="text" name="username" placeholder="Enter username" required> <br>
+        <input type="email" name="email" placeholder="Enter email" required> <br>
+        <input type="password" name="password" placeholder="Enter password" required> <br>
+        <button type="submit" name="btn-signup">SIGN UP</button>
     </form>
 </body>
 </html>
