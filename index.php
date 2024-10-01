@@ -20,7 +20,7 @@ include_once 'config/settings-configuration.php';
     </form>
    
    
-    <h1>REGISTRAION</h1>
+    <h1>REGISTRATION</h1>
     <form action="dashboard/admin/authentication/admin-class.php" method="POST">
         <input type="hidden" name="csrf_token" value="<?php echo $csrf_token?>">
         <input type="text" name="username" placeholder="Enter username" required> <br>
